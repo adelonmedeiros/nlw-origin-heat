@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
 </head>
+
 </body>
 <main>
     <div class="container">
@@ -20,22 +21,23 @@
             <img src="/images/delonzera.jpg" alt="Foto pessoal" />
         </div>
 
-        <h1>Adelon Medeiros</h1>
-        <a href="https://github.com/adelonmedeiros">
+        <h1 id="userName">Adelon Medeiros</h1>
+        <a href="https://github.com/adelonmedeiros" target="_blank">
             <img src="images/github.svg" alt="ícone github" />
             adelonmedeiros</a>
 
         <p>An instructor focused on helping people start programming for web</p>
-        <ul>
-            <li><a href="https://twitter.com/delonzera_" target="_blank">
+
+        <ul id="socialLinks">
+            <li class="twitter"><a href="https://twitter.com/delonzera_" target="_blank">
                     <img src="images/twitter.svg" alt="ícone twitter">
                 </a></li>
 
-            <li><a href="https://instagram.com/delonzera" target="_blank">
+            <li class="instagram"><a href="https://instagram.com/delonzera" target="_blank">
                     <img src="images/instagram.svg" alt="ícone instagram">
                 </a></li>
 
-            <li><a href="https://www.linkedin.com/in/adelon-medeiros-76ab6ab2" target="_blank">
+            <li class="linkedin"><a href="https://www.linkedin.com/in/adelon-medeiros-76ab6ab2" target="_blank">
                     <img src="images/linkedin.svg" alt="ícone linkedin" />
                 </a></li>
 
@@ -43,6 +45,28 @@
         </ul>
     </div>
 </main>
+
+<script>
+    const LinksSocialMedia = {
+    github : "jakeliny",
+    twitter : "jakelinytec",
+    instagram : "jakeliny.gracielly",
+    linkedin : "jakelinygracielly"
+}
+
+function changeSocialMediaLinks() {
+    for (let li of socialLinks.children) {
+       const social = li.getAttribute("class");
+
+       li.children[0].href = `https://${social}.com/${LinksSocialMedia[social]}`;
+        alert(li.children[0].href);
+    }
+}
+
+changeSocialMediaLinks()
+
+</script>
+
 </body>
 
 </html>
