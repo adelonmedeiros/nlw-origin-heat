@@ -29,7 +29,6 @@ function getGitHubProfileInfos() {
                 userImage.src = data.avatar_url;
                 userLogin.textContent = data.login;
             }
-
         )
 }
 
