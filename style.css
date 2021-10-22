@@ -22,9 +22,9 @@ body {
 }
 
 main {
-  background: url(images/background.svg);
-  width: 375px;
-  height: 812px;
+  background: url(images/background.svg) no-repeat center/cover;
+  min-width: 375px;
+  min-height: 812px;
 }
 
 .container {
