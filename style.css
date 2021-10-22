@@ -25,6 +25,7 @@ main {
   background: url(images/background.svg) no-repeat center/cover;
   min-width: 375px;
   min-height: 812px;
+  border-radius: 2rem;
 }
 
 .container {
