@@ -7,6 +7,7 @@ body {
   --black: hsl(240, 6%, 13%);
   --grey: hsl(240, 9%, 89%);
 
+
   height: 100%;
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -45,7 +46,7 @@ main {
   z-index: 1;
 }
 
-.avatar > img {
+.avatar>img {
   width: 10rem;
   height: 11.5rem;
   object-fit: cover;
@@ -76,6 +77,14 @@ p {
   margin-top: 2rem;
 }
 
+a:hover {
+  transition: 0.3s;
+}
+
+a span:hover {
+  color: #9737ff;
+}
+
 ul {
   margin-top: 4rem;
 
@@ -86,4 +95,12 @@ ul {
   gap: 0.5rem;
 
   justify-content: center;
+}
+
+li a {
+  transition: 0.3s;
+}
+
+li a:hover {
+  transform: translateY(-5px);
 }
