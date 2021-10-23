@@ -13,7 +13,7 @@ body {
   height: 100%;
   font-family: 'Roboto Condensed', sans-serif;
   -webkit-font-smoothing: antialiased;
-   background: #191622;
+  background: url(images/nlw.png) no-repeat center center fixed;
 }
 
 body {
